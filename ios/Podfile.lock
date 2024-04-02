@@ -15,7 +15,7 @@ PODS:
     - hermes-engine/Pre-built (= 0.73.2)
   - hermes-engine/Pre-built (0.73.2)
   - libevent (2.1.12)
-  - NMSSH (2.2.9)
+  - NMSSH (2.3.1)
   - RCT-Folly (2022.05.16.00):
     - boost
     - DoubleConversion
@@ -1054,8 +1054,8 @@ PODS:
     - React-jsi (= 0.73.2)
     - React-logger (= 0.73.2)
     - React-perflogger (= 0.73.2)
-  - RNSSHClient (1.5.5):
-    - NMSSH (= 2.2.9)
+  - RNSSHClient (1.5.11):
+    - NMSSH
     - React
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
@@ -1068,7 +1068,7 @@ DEPENDENCIES:
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
-  - NMSSH (= 2.2.9)
+  - NMSSH (from `https://github.com/speam/NMSSH.git`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCT-Folly/Fabric (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -1119,7 +1119,6 @@ SPEC REPOS:
   trunk:
     - fmt
     - libevent
-    - NMSSH
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1136,6 +1135,8 @@ EXTERNAL SOURCES:
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
     :tag: hermes-2023-11-17-RNv0.73.0-21043a3fc062be445e56a2c10ecd8be028dd9cc5
+  NMSSH:
+    :git: https://github.com/speam/NMSSH.git
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -1223,6 +1224,11 @@ EXTERNAL SOURCES:
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
+CHECKOUT OPTIONS:
+  NMSSH:
+    :commit: aca13f6a66ce61fa174b498a6f5d6f7bf63fb9a9
+    :git: https://github.com/speam/NMSSH.git
+
 SPEC CHECKSUMS:
   boost: d3f49c53809116a5d38da093a8aa78bf551aed09
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
@@ -1232,7 +1238,7 @@ SPEC CHECKSUMS:
   glog: c5d68082e772fa1c511173d6b30a9de2c05a69a2
   hermes-engine: b361c9ef5ef3cda53f66e195599b47e1f84ffa35
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  NMSSH: eb4a63d52631d3ffe348181793bb19434b01c32a
+  NMSSH: cd689ae535a1581a6dd9fd4600ff71247df510a6
   RCT-Folly: 7169b2b1c44399c76a47b5deaaba715eeeb476c0
   RCTRequired: 9b1e7e262745fb671e33c51c1078d093bd30e322
   RCTTypeSafety: a759e3b086eccf3e2cbf2493d22f28e082f958e6
@@ -1274,10 +1280,10 @@ SPEC CHECKSUMS:
   React-runtimescheduler: df8945a656356ff10f58f65a70820478bfcf33ad
   React-utils: f5bc61e7ea3325c0732ae2d755f4441940163b85
   ReactCommon: 45b5d4f784e869c44a6f5a8fad5b114ca8f78c53
-  RNSSHClient: f5c86e587174f4bb3313e7c5fa3e4dfb4fc089d8
+  RNSSHClient: 830bf1ead2b5f2d3e45c877bccd25a3eb5018e89
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: e64aa65de36c0832d04e8c7bd614396c77a80047
 
-PODFILE CHECKSUM: ce2b8fb49b356678b29890e84266822743f652a7
+PODFILE CHECKSUM: ff2b0757fe95590baf76c44abc3b971859b69e4b
 
 COCOAPODS: 1.12.1

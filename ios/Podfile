@@ -26,7 +26,7 @@ if linkage != nil
 end
 
 target 'ReactNativeSSHClientPrototype' do
-	pod 'NMSSH', '2.2.9'
+  pod 'NMSSH', :git => 'https://github.com/speam/NMSSH.git'
   config = use_native_modules!
 
   use_react_native!(
