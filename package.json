@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@dylankenneally/react-native-ssh-sftp": "^1.5.11",
+    "@dylankenneally/react-native-ssh-sftp": "^1.5.18",
     "react": "18.2.0",
     "react-native": "0.73.2"
   },

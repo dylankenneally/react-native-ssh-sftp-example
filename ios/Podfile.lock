@@ -1054,7 +1054,7 @@ PODS:
     - React-jsi (= 0.73.2)
     - React-logger (= 0.73.2)
     - React-perflogger (= 0.73.2)
-  - RNSSHClient (1.5.11):
+  - RNSSHClient (1.5.18):
     - NMSSH
     - React
   - SocketRocket (0.6.1)
@@ -1068,7 +1068,7 @@ DEPENDENCIES:
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
-  - NMSSH (from `https://github.com/speam/NMSSH.git`)
+  - NMSSH (from `https://github.com/aanah0/NMSSH.git`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCT-Folly/Fabric (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -1136,7 +1136,7 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
     :tag: hermes-2023-11-17-RNv0.73.0-21043a3fc062be445e56a2c10ecd8be028dd9cc5
   NMSSH:
-    :git: https://github.com/speam/NMSSH.git
+    :git: https://github.com/aanah0/NMSSH.git
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -1226,8 +1226,8 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   NMSSH:
-    :commit: aca13f6a66ce61fa174b498a6f5d6f7bf63fb9a9
-    :git: https://github.com/speam/NMSSH.git
+    :commit: fdb2ee4f24ed5d6f2a6c213a3989026caf076d63
+    :git: https://github.com/aanah0/NMSSH.git
 
 SPEC CHECKSUMS:
   boost: d3f49c53809116a5d38da093a8aa78bf551aed09
@@ -1280,10 +1280,10 @@ SPEC CHECKSUMS:
   React-runtimescheduler: df8945a656356ff10f58f65a70820478bfcf33ad
   React-utils: f5bc61e7ea3325c0732ae2d755f4441940163b85
   ReactCommon: 45b5d4f784e869c44a6f5a8fad5b114ca8f78c53
-  RNSSHClient: 830bf1ead2b5f2d3e45c877bccd25a3eb5018e89
+  RNSSHClient: 0dc3b519daa32fe0c1299b62dddd589450b394f0
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: e64aa65de36c0832d04e8c7bd614396c77a80047
 
-PODFILE CHECKSUM: ff2b0757fe95590baf76c44abc3b971859b69e4b
+PODFILE CHECKSUM: a0abb143e3637cc2070344a956b07e56b09575e8
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.15.2
